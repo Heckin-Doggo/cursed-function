@@ -11,12 +11,12 @@ def print_header():
     print("--------------------------")
     print("")
     print("     uwu genewatow")
-    print("(please leave this program is so bad)")
+    print("(please leave this program its so bad)")
     print("--------------------------")
 
-
+# cursed begins after this line
 def uwu(text):
-
+    modifiers = ["uwu", "owo", "UWU", "OWO"]
     while text.find("l") != -1:
         spot = text.find("l")
         text_1 = text[:spot]
@@ -27,7 +27,7 @@ def uwu(text):
         text_1 = text[:spot]
         text_2 = text[spot+1:]
         text = "{}w{}".format(text_1, text_2)
-    return "{} uwu".format(text)
+    return "{} {}".format(text, random.choice(modifiers))
 
 
 if __name__ == "__main__":
