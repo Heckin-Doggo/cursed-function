@@ -6,7 +6,7 @@ import discord
 
 #SETTINGS
 uwus = ["uwu", "owo", "0w0", "qwq"]
-sad_faces = [":(", ":frowning:", ":c", ":<", ":{", ":[", "'^'"]
+sad_faces = [":(", ":frowning:", ":c", ":<", ":{", ":[", "'^'", "):"]
 
 client = discord.Client()
 
@@ -75,6 +75,16 @@ def uwu(text, mod = True):
         text_1 = text[:spot]
         text_2 = text[spot+2:]
         text = "{}d{}".format(text_1, text_2)
+    while text.find("st") != -1:
+        spot = text.find("st")
+        text_1 = text[:spot]
+        text_2 = text[spot+2:]
+        text = "{}sht{}".format(text_1, text_2)
+    while text.find("hot") != -1:
+        spot = text.find("hot")
+        text_1 = text[:spot]
+        text_2 = text[spot+3:]
+        text = "{}hawt{}".format(text_1, text_2)
     if mod:
         return "{} {}".format(text.lower(), random.choice(modifiers))
     else:
@@ -83,4 +93,4 @@ def uwu(text, mod = True):
 
 if __name__ == "__main__":
     # main()
-    client.run("")
+    client.run("NTM5NTcyOTM1MjkyMjIzNDk5.DzEVCQ.5GYhkZcZUd88JQAKRtRJ7mYh3Ss")
